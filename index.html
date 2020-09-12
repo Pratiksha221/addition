@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADDITION</title>
+  </head>
+  <body>
+    <br />
+    <br />
+    <input id="number1" />
+    <br />
+    <br />
+    <input id="number2" />
+    <br />
+    <br />
+    <button id="go">ADD</button>
+    <br />
+    <br />
+
+    <div id="result"></div>
+    <br />
+    <br />
+    <script>
+      function add() {
+        var number1 = Number(document.getElementById('number1').value);
+        var number2 = Number(document.getElementById('number2').value);
+        var sum = number1 + number2;
+        document.getElementById('result').innerHTML = sum;
+      }
+
+      document.getElementById('go').addEventListener('click', add);
+    </script>
+  </body>
+</html>
